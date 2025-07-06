@@ -1,0 +1,53 @@
+Stored Procedure :
+
+A stored procedure is a predefined set of SQL statements stored in the database that performs a specific task.
+
+- Can have multiple input (IN), output (OUT) parameters.
+- Can contain logic: IF, LOOP, CURSOR, etc.
+- Used for inserting, updating, or any procedural logic.
+- Called using CALL procedure_name(...).
+
+Syntax:
+
+CREATE PROCEDURE proc_name (IN param1 INT, OUT result INT)
+BEGIN
+  -- logic
+END;
+
+Example :
+
+CALL IssueLoan(1, 2, 1, '2025-06-25', '2025-07-05');
+
+Function:
+
+A function returns a single value and is typically used to perform calculations or data lookups.
+
+- Always returns a value using RETURN
+- Used inside SQL statements like SELECT
+- Cannot modify table data
+- Can be scalar (single value) or table-valued (advanced)
+
+Syntax:
+
+CREATE FUNCTION func_name (param INT) RETURNS INT
+BEGIN
+  RETURN some_value;
+END;
+
+Example :
+
+SELECT GetFineTotalByMember(1);
+
+Why Use Stored Routines (Procedures/Functions)?
+  
+- Code reuse and modularity
+- Easier to maintain
+- Centralized business logic
+- Better security control
+
+IN / OUT / INOUT Parameters :
+
+`IN`   - Passes value **into** procedure 
+`OUT`  - Returns value **out**   
+`INOUT`- Both input and output  
+
