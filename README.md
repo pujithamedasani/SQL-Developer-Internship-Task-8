@@ -18,12 +18,12 @@ Learn to create reusable SQL blocks using:
 - SELECT GetFineTotalByMember(1) AS TotalUnpaidFine;
 
 ## Files
-`description_routines`: contains procedure and function definitions
-`create_functions.sql`: contains query for CREATE FUNCTION
-`create_procedures.sql`: contains query for CREATE PROCEDURE
-`library_schema.sql`: contains schema of tables
-`output for library_schema.png`: Output for library_schema.sql
-`README.md`: explanation and usage
+- `description_routines`: contains procedure and function definitions
+- `create_functions.sql`: contains query for CREATE FUNCTION
+- `create_procedures.sql`: contains query for CREATE PROCEDURE
+- `library_schema.sql`: contains schema of tables
+- `output for library_schema.png`: Output for library_schema.sql
+- `README.md`: explanation and usage
 
 ## Tools Used
 - One compiler / MySQL Workbench
